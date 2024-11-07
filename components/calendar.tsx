@@ -40,7 +40,7 @@ const EventCalendar = () => {
     };
 
     // Función para ocultar los días fuera del rango permitido
-    const tileContent = ({ date, view }) => {
+    const tileContent = ({ date, view }: { date: Date; view: string }) => {
         if (view === 'month' && hasEvent(date)) {
             return <p>🎅🏻</p>;
         }

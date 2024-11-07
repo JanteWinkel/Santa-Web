@@ -70,27 +70,6 @@ const MenuList = () => {
 }
 export default MenuList
 
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Collares",
-    href: "/category/collar",
-    description:
-      "Explora nuestros collares únicos para destacar tu estilo.",
-  },
-  {
-    title: "Pulseras",
-    href: "/category/pulsera",
-    description:
-      "Pulseras perfectas para cualquier ocasión",
-  },
-  {
-    title: "Sets",
-    href: "/category/sets",
-    description:
-      "Conjuntos perfectos para regalar o consentirte.",
-  }
-]
-
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">
