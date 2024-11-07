@@ -6,6 +6,7 @@ import 'react-calendar/dist/Calendar.css';  // Estilos predeterminados de react-
 import './calendar.css';  // Tus estilos personalizados
 import dynamic from 'next/dynamic';
 
+
 const Calendar = dynamic(() => import('react-calendar'), { ssr: false });
 
 const EventCalendar = () => {
@@ -64,17 +65,17 @@ const EventCalendar = () => {
                         </div>
                     )}
                 </div>
-                <div className="flex-1">
-                    <Calendar
-                        locale="es"
-                        className="text-primary bg-black"
-                        onChange={(date) => handleDateChange(date as Date)}
-                        minDate={minDate} // Restricción de fecha mínima
-                        maxDate={maxDate} // Restricción de fecha máxima
-                        view="month" // Asegurarse de que solo se vean los meses
-                        tileContent={tileContent}
-                        showNeighboringMonth={false} // Ocultar los días de los meses vecinos
-                    />
+                <div className="flex-1" style={{ transform: window.innerWidth < 380 ? 'scale(0.75)' : 'scale(1)' }}>
+                        <Calendar
+                            locale="es"
+                            className="text-primary bg-black"
+                            onChange={(date) => handleDateChange(date as Date)}
+                            minDate={minDate} // Restricción de fecha mínima
+                            maxDate={maxDate} // Restricción de fecha máxima
+                            view="month" // Asegurarse de que solo se vean los meses
+                            tileContent={tileContent}
+                            showNeighboringMonth={false} // Ocultar los días de los meses vecinos
+                        />
                 </div>
             </div>
             <div className='items-center text-center text-primary'>
