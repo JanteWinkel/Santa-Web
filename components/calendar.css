@@ -1,0 +1,117 @@
+/* Estilos generales del calendario */
+.react-calendar {
+    background-color: var(--primary);
+    border-radius: 8px;
+    border-color: var(--foreground);
+    box-shadow: 0px 4px 8px rgba(196, 16, 16, 0.1);
+    padding: 10px;
+    max-width: 350px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para los botones de navegación */
+.react-calendar__navigation button {
+    color: var(--secondary);
+    font-weight: bold;
+    border: none;
+    background-color: var(--primary);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Quitar fondo blanco en los botones de navegación de mes cuando están activos */
+.react-calendar__navigation button:active,
+.react-calendar__navigation button:focus,
+.react-calendar__navigation button:enabled:focus {
+    background-color: transparent !important; /* Quitar fondo */
+    outline: none !important; /* Opcional: quitar el contorno */
+    box-shadow: none !important; /* Opcional: quitar cualquier sombra */
+}
+
+
+/* Estilos para los días del calendario */
+.react-calendar__tile {
+    border-radius: 6px;
+    color: var(--primary);
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para los días activos */
+.react-calendar__tile--active {
+    background-color: #e42a2a;
+    color: white;
+    border-radius: 6px;
+}
+
+/* Estilos para el día actual */
+.react-calendar__tile--now {
+    background-color: transparent; /* Color del día actual */
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+/* Estilos para los días activos y el día actual al hacer hover */
+.react-calendar__tile--active:hover, 
+.react-calendar__tile--now:hover {
+    background-color: #612051;
+    color: white;
+    border-radius: 6px;
+}
+
+/* Estilos para los días seleccionados */
+.react-calendar__tile--active:enabled:focus {
+    background-color: #da2121;
+    color: white;
+    border-radius: 6px;
+}
+
+/* Estilos para cualquier día al hacer hover */
+.react-calendar__tile:hover {
+    background-color: #357b9b;
+    border-radius: 6px;
+    color: #990000;
+}
+
+/* Estilos para los días que tienen eventos */
+.react-calendar__tile--event {
+    background-color: #a51919; /* Color de fondo para los días con eventos */
+    color: var(--foreground); /* Color del texto para los días con eventos */
+    border-radius: 6px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano para indicar que es interactuable */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Estilos para la navegación de meses */
+.react-calendar__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para los botones de cambio de meses en modo dark */
+.dark .react-calendar__navigation button:hover {
+    background-color: rgb(18, 75, 121); /* Un tono más claro de fondo */
+    color: rgb(255, 255, 255); /* Cambiar el color del texto a primary */
+    border-radius: 20px; /* Bordes redondeados */
+    
+}
+
+/* Ocultar las flechas para cambiar de año */
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__next2-button {
+    visibility: hidden; /* Ocultar las flechas para cambiar de año */
+}
+
+/* Evitar cambio de estilo en los botones de mes */
+.react-calendar__navigation__label {
+    pointer-events: none; /* Deshabilita interacción con el botón del mes */
+    color: inherit; /* Opcional: Asegura que el color permanezca igual */
+    background-color: transparent; /* Evita fondo en estado activo */
+}
+
