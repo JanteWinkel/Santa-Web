@@ -64,7 +64,7 @@ const EventCalendar = () => {
                         </div>
                     )}
                 </div>
-                <div className="flex-1 md:scale-100 scale-75">
+                <div className="flex-1 md:scale-100 scale-90 transition-all">
                         <Calendar
                             locale="es"
                             className="text-primary bg-black"
