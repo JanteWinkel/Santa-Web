@@ -15,7 +15,7 @@ const BannerContador = () => {
 
             {/* Right Side: Video or Image */}
             <div className="max-w-sm gap-3 my-2 md:max-w-xl md:gap-5 md:my-4">
-                <div className="md:scale-100 scale-75">
+                <div className="md:scale-100 scale-90">
                     <CountdownToChristmas />
                 </div>
             </div>
