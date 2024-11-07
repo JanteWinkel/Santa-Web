@@ -6,7 +6,6 @@ import 'react-calendar/dist/Calendar.css';  // Estilos predeterminados de react-
 import './calendar.css';  // Tus estilos personalizados
 import dynamic from 'next/dynamic';
 
-
 const Calendar = dynamic(() => import('react-calendar'), { ssr: false });
 
 const EventCalendar = () => {
@@ -65,7 +64,7 @@ const EventCalendar = () => {
                         </div>
                     )}
                 </div>
-                <div className="flex-1" style={{ transform: window.innerWidth < 380 ? 'scale(0.75)' : 'scale(1)' }}>
+                <div className="flex-1 md:scale-100 scale-75">
                         <Calendar
                             locale="es"
                             className="text-primary bg-black"
