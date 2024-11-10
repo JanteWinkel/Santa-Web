@@ -3,7 +3,7 @@ import CountdownToChristmas from "./CountdownToChristmas";
 
 const BannerContador = () => {
     return (
-        <div id="banner-contador" className="flex flex-col md:flex-row items-center justify-center p-8 mt-16 md:space-x-8 bg-primary/30">
+        <div id="contador" className="flex flex-col md:flex-row items-center justify-center p-8 mt-16 md:space-x-8 bg-primary/30">
             {/* Left Side: Countdown */}
             <div className="mb-8 md:mb-0 w-full md:w-1/2 flex flex-col items-center justify-center">
 

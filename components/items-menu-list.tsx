@@ -9,9 +9,9 @@ const ItemsMenuMobile = () => {
                 <Menu className="text-primary" />
             </PopoverTrigger>
             <PopoverContent>
-                <Link href="#banner-contador" className="block text-primary">Contador Navideño</Link>
+                <Link href="#contador" className="block text-primary">Contador Navideño</Link>
                 <Link href="#calendario" className="block text-primary">Calendario</Link>
-                <Link href="#tipos-de-eventos" className="block text-primary"> Tipos de eventos</Link>
+                <Link href="#eventos" className="block text-primary"> Tipos de eventos</Link>
                 <Link href="#contacto" className="block text-primary">Contacto</Link>
             </PopoverContent>
         </Popover>

@@ -15,24 +15,35 @@ const Empresas = () => {
     ];
 
     return (
-        <div className="santa-sightings-container max-w-screen-lg mx-auto mt-16 p-6 text-center">
-            <h2 className="text-2xl font-bold mb-4"></h2>
-            <p className="text-gray-600 mb-6">
-                Estas empresas han apoyado los avistamientos de Santa 🎅🏻. ¡Agradecemos su colaboración!
-            </p>
-            
-            <div className="sponsors-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 ">
-                {sponsors.map((sponsor) => (
-                    <div key={sponsor.name} className="sponsor-logo bg-transparent rounded-lg p-3 shadow-lg">
-                        <img
-                            src={sponsor.logoUrl}
-                            alt={`Logo de ${sponsor.name}`}
-                            width={100} 
-                            height={100} 
-                            className="object-contain w-full h-full rounded-lg"
-                        />
-                    </div>
-                ))}
+        <div className="mt-16">
+            <div className="flex justify-center items-center">
+                <img
+                    src="/logos/logo-navbar-2.png"
+                    alt="Santa Claus Querido logo"
+                    width={300}
+                    height={300}
+                    className="object-contain rounded-lg"
+                />
+            </div>
+            <div className="santa-sightings-container max-w-screen-lg mx-auto  p-6 text-center">
+                <h2 className="text-2xl font-bold mb-4"></h2>
+                <p className="text-gray-600 mb-6">
+                    Estas empresas han apoyado los avistamientos de Santa 🎅🏻. ¡Agradecemos su colaboración!
+                </p>
+
+                <div className="sponsors-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 ">
+                    {sponsors.map((sponsor) => (
+                        <div key={sponsor.name} className="sponsor-logo bg-transparent rounded-lg p-3 shadow-lg">
+                            <img
+                                src={sponsor.logoUrl}
+                                alt={`Logo de ${sponsor.name}`}
+                                width={100}
+                                height={100}
+                                className="object-contain w-full h-full rounded-lg"
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );

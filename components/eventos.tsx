@@ -9,7 +9,7 @@ const Eventos = () => {
     ];
 
     return (
-        <div id="tipos-de-eventos" className='max-w-6xl  mt-16 mx-auto sm:py-6 sm:px-8'>
+        <div id="eventos" className='max-w-6xl  mt-16 mx-auto sm:py-6 sm:px-8'>
             <h2 className=" text-5xl text-primary font-extrabold uppercase text-center">
                     Tipos de Eventos 
                 </h2>

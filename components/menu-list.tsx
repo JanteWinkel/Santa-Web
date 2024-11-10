@@ -39,10 +39,10 @@ const MenuList = () => {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="#carousel-santa" title="Santa de Margarita">
+              <ListItem href="#carousel" title="Santa de Margarita">
                 Llevando alegría y sonrisas a cada encuentro.              </ListItem>
 
-              <ListItem href="#banner-contador" title="La Navidad se Acerca">
+              <ListItem href="#contador" title="La Navidad se Acerca">
                 Cuenta Regresiva al 24 de Diciembre         </ListItem>
 
               <ListItem href="#calendario" title="Calendario Navideño">
@@ -51,7 +51,7 @@ const MenuList = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="#tipos-de-eventos" legacyBehavior passHref>
+          <Link href="#eventos" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Tipo de Eventos
             </NavigationMenuLink>
