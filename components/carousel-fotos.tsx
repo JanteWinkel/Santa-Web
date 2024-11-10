@@ -4,10 +4,10 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 const CarouselSanta = () => {
     const images = [
        
-        { id: 2, src: "/images/santa-2.jpg", alt: "Descripción de la imagen 2" },
-        { id: 3, src: "/images/santa-3.jpg", alt: "Descripción de la imagen 3" },
-        { id: 4, src: "/images/santa-4.jpg", alt: "Descripción de la imagen 2" },
-        { id: 5, src: "/images/santa-5.jpg", alt: "Descripción de la imagen 2" },
+        { id: 2, src: "/images/santa-2.jpg", alt: "Santa" },
+        { id: 3, src: "/images/santa-3.jpg", alt: "Ho Ho Ho" },
+        { id: 4, src: "/images/santa-4.jpg", alt: "Santa Posando" },
+        { id: 5, src: "/images/santa-5.jpg", alt: "Shhhhh" },
       ];
     return ( 
             <div id="carousel-santa" className="sm:px-16 pt-8 m-2">
