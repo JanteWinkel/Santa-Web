@@ -9,7 +9,7 @@ const CarouselSanta = () => {
         { id: 4, src: "/images/santa-4.jpg", alt: "Descripción de la imagen 2" },
       ];
     return ( 
-            <div id="carousel-santa" className="sm:px-16 pt-8">
+            <div id="carousel-santa" className="sm:px-16 pt-8 m-2">
               <Carousel className="text-primary">
                 <CarouselContent className="-ml-2 md:-ml-4 ">
                   {images.map((image) => (

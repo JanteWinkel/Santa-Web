@@ -14,11 +14,12 @@ const EventCalendar = () => {
 
     // Ejemplo de eventos con fecha como clave en formato YYYY-MM-DD
     const events = {
-        '2024-11-24': 'Visita de Santa Claus en la Plaza Central a las 5 PM.',
-        '2024-11-28': 'Visita de Santa Claus en la Plaza Central a las 5 PM.',
-        '2024-12-24': 'Visita de Santa Claus en la Plaza Central a las 5 PM.',
-        '2024-12-25': 'Fiesta de Navidad en el Centro Comunitario a las 7 PM.',
-
+        '2024-11-13': 'Fiesta en la Navidad. Academia de baile Yendis. 5 PM.',
+        '2024-11-15': 'Encendido Navideño en La Vela Centro Comercial. 5 PM.',
+        '2024-11-29': 'Black Friday en La Vela Centro Comercial. 5 PM.',
+        '2024-12-21': ' Espíritu de la Navidad.',
+        '2024-12-24': 'Nochebuena.',
+        '2024-12-25': 'Navidad.',
     };
 
     // Manejar el cambio de fecha seleccionada en el calendario

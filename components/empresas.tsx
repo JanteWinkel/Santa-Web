@@ -10,7 +10,7 @@ const Empresas = () => {
         { name: 'LD Hoteles', logoUrl: '/empresas/ld-hoteles.png' },
         { name: 'Mundo Total', logoUrl: '/empresas/mundo-total.png' },
         { name: 'Farmacia tu Igualdad', logoUrl: '/empresas/farmacia-tu-igualdad.jpeg' },
-        { name: 'Tijerazo', logoUrl: '/empresas/tijerazo.png' },
+        { name: 'Tijerazo', logoUrl: '/empresas/tijerazo.jpg' },
         { name: 'The Crepp Maker', logoUrl: '/empresas/crepp.png' },
     ];
 
